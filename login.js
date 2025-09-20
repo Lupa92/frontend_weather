@@ -19,7 +19,7 @@ document.querySelector("#register").addEventListener('click', function(){
         .then(response => response.json())
         .then((data)=>{
             if(data.result === true){
-                return window.location.assign("http://127.0.0.1:5500/lacapsule-fullstack-js/week3/weatherapp-part4/frontend/index.html")
+                return window.location.assign("https://frontend-weather-tan.vercel.app/")
             }
         })
 })
@@ -42,7 +42,7 @@ document.querySelector("#connection").addEventListener('click', function(){
         .then((data)=>{
             if(data.result === true||data.result==="true"){
                 console.log("true")
-                return window.location.assign("http://127.0.0.1:5500/lacapsule-fullstack-js/week3/weatherapp-part4/frontend/index.html")
+                return window.location.assign("https://frontend-weather-tan.vercel.app/")
             } else {console.log("false" + " "+ email +" "+ password + " "+ data.result + email.typeOf())}
         })
 })
