@@ -7,7 +7,7 @@ document.querySelector("#register").addEventListener('click', function(){
     let password = document.querySelector("#registerPassword").value;
 
 
-    fetch('http://localhost:3000/users/signup',{
+    fetch('backend-weather-ylsr.vercel.app/users/signup',{
         method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({
@@ -30,7 +30,7 @@ document.querySelector("#connection").addEventListener('click', function(){
     let password = document.querySelector("#connectionPassword").value;
 
 
-    fetch('http://localhost:3000/users/signin',{
+    fetch('backend-weather-ylsr.vercel.app/users/signin',{
         method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({
